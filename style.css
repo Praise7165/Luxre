@@ -8,6 +8,7 @@
 
 body {
     font-family: 'General sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #403E3F;
 }
 
 .universal-wrapper {
@@ -83,4 +84,30 @@ button {
 video {
     width: 100%;
     max-width: 1440px;
+}
+
+.social-proof div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.social-proof strong {
+    font: normal 400 64px/1.4 Satoshi; 
+}
+
+.social-proof p {
+    font: normal 300 18px/1.8 'General sans';
+    color: #B0A2A5;
+    white-space: normal;
+}
+
+.social-proof {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 96px;
+    gap: 5em;
+}
+
+img {
+    max-width: 100%;
 }
