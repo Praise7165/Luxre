@@ -187,6 +187,13 @@ button {
     background-position: 50% 50%;
 }
 
+.testimonials {
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    "one two two"
+    "three four five"
+}
 
 .processes {
     padding: 32px;

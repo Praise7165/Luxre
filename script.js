@@ -1,5 +1,5 @@
 let projects = document.querySelector(".projects");
-let testimonials = document.querySelector(".testimonial");
+let testimonials = document.querySelector(".testimonials");
 
 for (let project of projectList) {
 
@@ -64,8 +64,11 @@ for (let project of projectList) {
     
     
         testimonialCard.appendChild(testimonialP);
-        testimonials.appendChild(projectName);
+        testimonialCard.appendChild(projectName);
         testimonials.appendChild(testimonialCard);
-    }
+    };
     
-}
+};
+
+
+
