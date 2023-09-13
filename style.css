@@ -184,16 +184,66 @@ button {
 
 .project-image {
     background-size: cover;
+    height: 320px;
     background-position: 50% 50%;
 }
 
 .testimonials {
     display: grid;
-    gap: 20px;
+    column-gap: 20px;
+    row-gap: 48px;
     grid-template-areas: 
-    "one two two"
+    "one one two"
     "three four five"
 }
+
+.testimonial {
+    font: normal 500 20px/1.6 Satoshi;
+    margin-bottom: 28px;
+}
+
+.tCards {
+    padding: 20px;
+    display: grid;
+}
+
+.tname {
+    margin-top: auto;
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five
+}
+
+.two, .four, .five {
+    background-color: #FAF5F6;
+}
+
+.one {
+    background-color: #403E3F;
+    color: #f0e7ea;
+
+    .tname {
+        color: white;
+    }
+}
+
 
 .processes {
     padding: 32px;
@@ -214,6 +264,7 @@ button {
 .process-four {
     background-image: url("https://s3-alpha-sig.figma.com/img/1184/c433/a97de5c9054fc93f06e4d8587c4f5c5a?Expires=1694390400&Signature=R2cjL8SjjQ9rTYOFo81aHWTmKBVotdfINP~CCHYdOGZzCKubSQSuhQngF7-2fY5Ecj3wBjlSZpK-rTyGVD-JFyEKE7vjihxACSmPu9uzuxQQyp0jyjPFLpLcGqIPxi3rXPjQmawntD3tCREi5aj5w6GzAPkZwiVu6jnb--pYVikL08WN-n8D21D7kHSBGoUl9sZwLgV2vaK2hL~8JXAyqYpX8Z32WXzxilxZqwrHWw5VmGqYgFmvqcZ7bRCYoe1h2A5AYWMlqbnX-XBNs4WFBdnAkLLxm2VMZ0NQSQURRLLr~OCVCpa4SYLAiOKioXWvlF8IA8iZDD7M36N7m-9Oow__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
 }
+
 
 
 

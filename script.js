@@ -1,10 +1,18 @@
 let projects = document.querySelector(".projects");
 let testimonials = document.querySelector(".testimonials");
 
-for (let project of projectList) {
 
-    let projectDate = new Date(project.DateCompleted);
+projectList.forEach((project) => {
+    return project.DateCompleted = new Date(project.DateCompleted);
+});
 
+
+projectList.sort((a, b) => {
+    return b.DateCompleted - a.DateCompleted;
+});
+
+
+for (let project of projectList.slice(0, 6)) {
 
     let projectCard = document.createElement("div");
     let projectDetails = document.createElement("div");
@@ -19,7 +27,7 @@ for (let project of projectList) {
     heading.innerText = project.Name;
     location.innerText = project.Location;
 
-    dateCompleted.innerText = projectDate.getFullYear();
+    dateCompleted.innerText = project.DateCompleted.getFullYear();
     type.innerText = project.Type;
     bgImage.style.backgroundImage = `url("${project.CoverImage}")`;
     bgImage.style.height = "320px";
@@ -46,29 +54,41 @@ for (let project of projectList) {
     projectDetails.classList.add("project-details");
     bgImage.classList.add("project-image");
     
-
-
-
-
-    
-    if (projectDate.getFullYear() < 2022) {
-        continue;
-    } else {
-        let testimonialCard = document.createElement("div");
-        let testimonialP = document.createElement("p");
-        let projectName = document.createElement("div");
-    
-    
-        testimonialP.innerText = project.Testimonial;
-        projectName.innerText = project.Name + " in " + project.Location;
-    
-    
-        testimonialCard.appendChild(testimonialP);
-        testimonialCard.appendChild(projectName);
-        testimonials.appendChild(testimonialCard);
-    };
-    
 };
+
+
+
+let TestimonialClasses = ["one", "two", "three", "four", "five"];
+
+
+let newProjects = projectList.filter((project) => {
+    if (project.DateCompleted.getFullYear() >= 2022) {
+        return project;
+    }
+});
+
+for (let i = 0; i < newProjects.length; i++) {
+
+    let testimonialCard = document.createElement("div");
+    let testimonialP = document.createElement("p");
+    let projectName = document.createElement("div");
+    
+    
+    testimonialP.innerText = newProjects[i].Testimonial;
+    testimonialP.innerHTML = "&ldquo;" + testimonialP.innerText  + "&rdquo;";
+    projectName.innerText = newProjects[i].Name + " in " + newProjects[i].Location + ", " + newProjects[i].DateCompleted.getFullYear();
+    
+    testimonialP.classList.add("testimonial");
+    testimonialCard.classList.add(`${TestimonialClasses[i]}`, "tCards");
+    projectName.classList.add("tname");
+
+    testimonialCard.appendChild(testimonialP);
+    testimonialCard.appendChild(projectName);
+    testimonials.appendChild(testimonialCard);   
+
+};
+
+
 
 
 
