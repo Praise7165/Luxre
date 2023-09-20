@@ -150,7 +150,7 @@ button {
     align-items: center;
 }
 
-.project {
+.bgColor1 {
     background-color: #FAF5F6;
 }
 
@@ -213,6 +213,12 @@ button {
 
 .one {
     grid-area: one;
+    background-color: #403E3F;
+    color: #f0e7ea;
+
+    .tname {
+        color: white;
+    }
 }
 
 .two {
@@ -221,6 +227,7 @@ button {
 
 .three {
     grid-area: three;
+    border: 1px solid #f0e7ea;
 }
 
 .four {
@@ -235,18 +242,24 @@ button {
     background-color: #FAF5F6;
 }
 
-.one {
-    background-color: #403E3F;
-    color: #f0e7ea;
-
-    .tname {
-        color: white;
-    }
+.processes {
+    display: grid;
+    gap: 48px;
 }
 
+.process {
+    padding: 40px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
-.processes {
-    padding: 32px;
+.subheading {
+    width: 20rem;
+    font: normal 400 16px/1.6 'General Sans';
+    align-self: flex-end;
+    letter-spacing: .5px;
 }
 
 .process-one {
@@ -264,6 +277,8 @@ button {
 .process-four {
     background-image: url("https://s3-alpha-sig.figma.com/img/1184/c433/a97de5c9054fc93f06e4d8587c4f5c5a?Expires=1694390400&Signature=R2cjL8SjjQ9rTYOFo81aHWTmKBVotdfINP~CCHYdOGZzCKubSQSuhQngF7-2fY5Ecj3wBjlSZpK-rTyGVD-JFyEKE7vjihxACSmPu9uzuxQQyp0jyjPFLpLcGqIPxi3rXPjQmawntD3tCREi5aj5w6GzAPkZwiVu6jnb--pYVikL08WN-n8D21D7kHSBGoUl9sZwLgV2vaK2hL~8JXAyqYpX8Z32WXzxilxZqwrHWw5VmGqYgFmvqcZ7bRCYoe1h2A5AYWMlqbnX-XBNs4WFBdnAkLLxm2VMZ0NQSQURRLLr~OCVCpa4SYLAiOKioXWvlF8IA8iZDD7M36N7m-9Oow__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
 }
+
+
 
 
 
