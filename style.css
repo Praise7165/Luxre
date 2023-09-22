@@ -21,7 +21,7 @@ video {
 }
 
 .universal-wrapper {
-    padding: 120px 0;
+    padding: 120px 32px;
 }
 
 .spacing-content {
@@ -56,6 +56,7 @@ video {
 ol {
     list-style-type: none;
 }
+
 .navlinks {
     display: flex;
     gap: 24px;
@@ -150,7 +151,7 @@ button {
     align-items: center;
 }
 
-.bgColor1 {
+.process-wrapper {
     background-color: #FAF5F6;
 }
 
@@ -302,7 +303,7 @@ button {
     width: 50%;
 }
 
-.process button, .process p {
+.process button, .process p, .footer-wrapper button, .contact-info a {
     color: inherit;
 }
 
@@ -311,23 +312,83 @@ button {
     margin-left: 8px;
 }
 
-.process p {
+.process p, .footer-wrapper h1 {
     margin-bottom: 16px;
+}
+
+
+.footer-wrapper {
+    background-color: rgba(64, 62, 63);
+    color: #FAF5F6;
+    font: normal 300 16px/1.8 'General sans';
+}
+
+.footer-wrapper .container > :first-child {
+    width: 70%;
+}
+
+.footer-wrapper h1 {
+    color: #D6C7CB;
+}
+
+.footer-wrapper .container > :last-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 120px;
+}
+
+.footer-wrapper  h6{
+    font: normal 400 18px 'General sans';
+    margin-bottom: 16px;
+}
+
+.contact-info, .company-info, .footer-wrapper ol {
+    display: grid;
+    row-gap: 64px;
+}
+
+.footer-wrapper ol {
+    row-gap: 12px;
 }
 
 
 
 /* For medium devices, tablets and small laptops 991px downward */
 @media only screen and (max-width: 991px) {
+    .universal-wrapper {
+        padding: 120px 56px;
+    }
+    
+    .container {
+        max-width: none;
+        margin: 0;
+    }
 
+    .footer-wrapper .container > :first-child {
+        width: 90%;
+    }
+
+    h1 {
+        font: normal 400 64px/120% Satoshi;
+    }
+
+    .footer-wrapper .container > :last-child {
+        flex-wrap: wrap;
+    }
 }
 
 /* small devices, landscape tablet and large phone 767 downward */
 @media only screen and (max-width: 767px) {
+    .universal-wrapper {
+        padding: 120px 32px;
+    }
 
 }
 
 /* For extra small devices, mobile phones 480 downward */
 @media only screen and (max-width: 480px) {
-    
+    .universal-wrapper {
+        padding: 120px 20px;
+    }   
 }

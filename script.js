@@ -12,8 +12,8 @@ projectList.sort((a, b) => {
 });
 
 
-for (let project of projectList.slice(0, 6)) {
 
+projectList.slice(0, 6).forEach((project) => {
     let projectCard = document.createElement("div");
     let projectDetails = document.createElement("div");
     let heading = document.createElement("h3");
@@ -54,7 +54,7 @@ for (let project of projectList.slice(0, 6)) {
     projectDetails.classList.add("project-details");
     bgImage.classList.add("project-image");
     
-};
+});
 
 
 
@@ -87,7 +87,6 @@ for (let i = 0; i < newProjects.length; i++) {
     testimonials.appendChild(testimonialCard);   
 
 };
-
 
 
 
