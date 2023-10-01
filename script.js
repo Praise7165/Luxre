@@ -1,5 +1,7 @@
 let projects = document.querySelector(".projects");
 let testimonials = document.querySelector(".testimonials");
+let sideBar = document.querySelector("nav");
+let menuBar = document.querySelector(".menuBar")
 
 
 projectList.forEach((project) => {
@@ -89,5 +91,8 @@ for (let i = 0; i < newProjects.length; i++) {
 };
 
 
+menuBar.addEventListener("click", () => {
+    sideBar.classList.toggle("sideBar");
+});
 
 

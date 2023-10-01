@@ -21,7 +21,7 @@ video {
 }
 
 .universal-wrapper {
-    padding: 120px 32px;
+    padding: 120px 0;
 }
 
 .spacing-content {
@@ -33,6 +33,21 @@ video {
     margin: 0 auto;
 }
 
+.menuBar {
+    display: none;
+}
+
+.menuBar div {
+    width: 24px;
+    height: 2px;
+    background-color: #262424;
+    border-radius: 2px;
+}
+
+.menuBar div:nth-of-type(2) {
+    margin: 4px 0;
+}
+
 .header-wrapper {
     padding: 0;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.20) 100%);
@@ -42,6 +57,7 @@ video {
     z-index: 1000;
 
 }
+
 .header-container {
     margin: 0 auto;
     display: flex;
@@ -49,8 +65,6 @@ video {
     align-items: center;
     padding: 16px 0 24px 0;
     border-bottom: 1px solid hsl(348, 33%, 97%, .4);
-
-
 }
 
 ol {
@@ -64,9 +78,9 @@ ol {
 }
 
 .navlinks li a {
-    font: normal 300 18px/.5 Satoshi;
+    font: normal 300 16px/.5 Satoshi;
     color: #BDACB0;
-    padding: 12px;
+    padding: 8px;
     border-radius: 32px;
 }
 
@@ -352,43 +366,62 @@ button {
     row-gap: 12px;
 }
 
+.sideBar {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: #FAF5F6;
+    margin-top: 72px;
+    padding: 64px;
+}
 
+
+
+
+@media only screen and (max-width: 1300px) {
+    .container {
+        margin: 0 56px;
+    }
+}
 
 /* For medium devices, tablets and small laptops 991px downward */
 @media only screen and (max-width: 991px) {
-    .universal-wrapper {
-        padding: 120px 56px;
-    }
-    
     .container {
-        max-width: none;
-        margin: 0;
-    }
-
-    .footer-wrapper .container > :first-child {
-        width: 90%;
-    }
-
-    h1 {
-        font: normal 400 64px/120% Satoshi;
-    }
-
-    .footer-wrapper .container > :last-child {
-        flex-wrap: wrap;
+        margin: 0 40px;
     }
 }
 
 /* small devices, landscape tablet and large phone 767 downward */
 @media only screen and (max-width: 767px) {
-    .universal-wrapper {
-        padding: 120px 32px;
+    .container {
+        margin: 0 24px;
     }
 
+    .menuBar {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .navlinks {
+        flex-direction: column;
+        gap: 64px;
+    }
+
+    .navlinks li a {
+        font-size: 24px;
+        color: #262424;
+    }
 }
 
 /* For extra small devices, mobile phones 480 downward */
 @media only screen and (max-width: 480px) {
-    .universal-wrapper {
-        padding: 120px 20px;
-    }   
+    .container {
+        margin: 0 16px;
+    } 
 }
