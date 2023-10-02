@@ -147,6 +147,7 @@ button {
 
 .services-container > div {
     display: grid;
+    height: 240px;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 }
@@ -441,8 +442,13 @@ button {
 
     .services-container > div {
         grid-template-columns: 1fr;
-        gap: 16px;
+        gap: 1rem/1.5rem;
+        width: 100%;
 
+    }
+
+    img {
+        width: 100%;
     }
 }
 
