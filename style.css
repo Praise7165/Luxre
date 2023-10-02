@@ -21,6 +21,10 @@ video {
     max-width: 1440px;
 }
 
+.bgColor1 {
+    background-color: #FAF5F6;
+}
+
 .universal-wrapper {
     padding: 120px 0;
 }
@@ -137,7 +141,7 @@ button {
 
 
 .section-heading {
-    font: normal 400 48px/1.3 Satoshi;
+    font: normal 400 3rem/1.3 Satoshi;
 }
 
 .services {
@@ -147,9 +151,26 @@ button {
 
 .services-container > div {
     display: grid;
-    height: 240px;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+}
+
+.service-image {
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 400px;
+}
+
+.service-one {
+    background-image: url("https://s3-alpha-sig.figma.com/img/7b6a/b5de/634e4f30ceb4aa9fe050798e895f2329?Expires=1697414400&Signature=gO~LbMSeSLcwt7CP11PoLYfpKYBzwDEffYZIAqD75X7h1lW-hpQQY8Mhoc72djenTksb4vEmoRMJhNYc3Cr0s4ISaKPHruq2Zhz-QFuZyUjKjfUY8HkVX7HS4I9kna~A69N9WaojzYtN7aB~OfYXQEgYt7CWVVOebp4iHIHFq7lDmpUjDcQvSGsE05313cyHC20wIRpP~tHdvbcwriqY6NDCQ~u99e8wUq6RQn-jUrGd-BUWZQ6aIU5OSxiXnOrJ5-Oc2eIcHDnjwNZrux5s9V-ztH2Ehoi8eoNhO54QSEQgL~Dl6c-rhiF0R3JV2fiGZC9whFu~iOvm~EQFXko8mQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
+}
+
+.service-two {
+    background-image: url("https://s3-alpha-sig.figma.com/img/3746/1d90/4f11d42ef774ba19a9e163ccca2e3864?Expires=1697414400&Signature=DAeeY-aEoO2daB8Ysm9U7450ebeXqd-zHaEqqjRMA0XbtH-tXZ0ZUyBkVSEN31JVQvdg3niLwISOz5sABTD1bkR1hd9lDYY74Iorba9NMGd8YWTGcmKWVpOkrzCceHBL1l01ZbZ1eYOuZRXpEcD5P7e9MuqQYbZESB9iJHyBCUExoGXaES27~9MdHsdk5shkVbZmIXmSVsOa4je-v3DbhOfDiZFfOWlHfwXr0WmRGMwQoMsIL6o7jLbw5fTMnNF3DV8AFUl-2XViTxCRF5txFHqrA7FmrYvzQUyAB0XXRFBlwvKOWfL35gj4UggJk6LjAW~HKUrrY4M~CsIeBD1Jdg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
+}
+
+.service-three {
+    background-image: url("https://s3-alpha-sig.figma.com/img/a707/5020/0c5f6ab2b161abc512ea138386a84993?Expires=1697414400&Signature=kfwaQD0duLaWuB~opu8-g4Mivm7xtfnJu5oBct5lfaM7p-2qhvIYNSPz1myiTORNs-W6KM8270BIMxPCWsL5buKTRqfFawBLSsKaB5R11Jtfo-9FvnqPzxr8xwWG4UIhwNkyXz0TZK8X54Px1dWdqcmCdt-xeUg-UrFJP3aw9nWh2x4x8K6PmQanYuY07R9P7tn4VKV2GkKArGxuvIrjDITFI2F8mALWDxassLkhJgrUOOCbMke0o12kw~fVxh0NF28GxxM6hWy7aSbYip9MYAJrZWk9vAXksxf0Jek4WMnRAbiEMtAcFdKW6GiQEGBuqbgeMYw0woPbSchTfD4A7w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4")
 }
 
 .service > p {
@@ -195,6 +216,7 @@ button {
     display: flex;
     gap: 8px;
     margin-top: 8px;
+    flex-wrap: wrap;
 }
 
 .project-details {
@@ -400,6 +422,10 @@ button {
     h1 {
         font-size: 64px;
     }
+
+    .projects {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 /* small devices, landscape tablet and large phone 767 downward */
@@ -442,19 +468,28 @@ button {
 
     .services-container > div {
         grid-template-columns: 1fr;
-        gap: 1rem/1.5rem;
-        width: 100%;
-
+        gap: 3rem;
     }
 
-    img {
-        width: 100%;
+    .container header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: .5rem;
+    }
+
+    .projects {
+        gap: 4rem 1rem;
     }
 }
 
 /* For extra small devices, mobile phones 480 downward */
 @media only screen and (max-width: 480px) {
     .container {
-        margin: 0 16px;
+        margin: 0 1rem;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+        gap: 3rem 1rem;
     }
 }
