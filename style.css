@@ -16,7 +16,7 @@
 }
 
 body {
-    font-family: Satoshi, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Satoshi, Tahoma, Geneva, Verdana, sans-serif;
     color: #403E3F;
     font-size: 16px;
 }
@@ -117,7 +117,7 @@ button {
     color: #2DBDBD;
     background-color: transparent;
     text-decoration: underline;
-    font: normal 500 20px Satoshi;
+    font: normal 600 20px Satoshi;
 }
 
 .hero-content {
@@ -383,18 +383,21 @@ button {
 .footer-wrapper .container > :last-child {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    flex-wrap: wrap;
     margin-top: 120px;
 }
 
-.footer-wrapper  h6{
+.footer-wrapper h6 {
     font: normal 400 18px Satoshi;
     margin-bottom: 16px;
 }
 
+
+
 .contact-info, .company-info, .footer-wrapper ol {
-    display: grid;
-    row-gap: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
 }
 
 .footer-wrapper ol {
@@ -443,6 +446,18 @@ button {
         "three four"
         "five";
     }
+
+    .grid-item {
+        flex: 1 240px;
+    }
+
+    .contact-info {
+        gap: 2rem;
+    }
+
+    .footer-wrapper .container > :last-child  {
+        gap: 3rem;
+    }
 }
 
 /* small devices, landscape tablet and large phone 767 downward */
@@ -470,7 +485,7 @@ button {
     }
 
     h1 {
-        font-size: 48px;
+        font: normal 600 48px/120% Satoshi;
     }
 
 
@@ -506,6 +521,43 @@ button {
         "four"
         "five";
     }
+
+    .subheading {
+        align-self: flex-start;
+    }
+
+    button {
+        font: normal 900 24px Satoshi;
+    }
+
+    .process {
+        padding: 2.5rem 1.5rem;
+        height: 480px;
+    }
+
+    .overlay {
+        background: rgba(64, 62, 63, 0.5);
+    }
+
+    .process > :last-child {
+        width: 80%;
+    }
+
+    .footer-wrapper .container > :first-child {
+        width: 100%;
+    }
+
+    .grid-item {
+        margin-top: 2.5rem;
+    }
+
+    .contact-info {
+        margin-top: 0;
+    }
+
+
+
+
 }
 
 /* For extra small devices, mobile phones 480 downward */
@@ -516,6 +568,25 @@ button {
 
     .projects {
         grid-template-columns: 1fr;
-        gap: 3rem 1rem;
+        gap: 4rem 1rem;
     }
+
+    .process > :last-child {
+        width: 100%;
+    }
+
+
+    /*
+    .footer-wrapper .container > :last-child  {
+        gap: 0;
+        align-items: space-between;
+        justify-content: space-between;
+    }
+
+    */
+
+    .grid-item {
+        flex: 1 auto;
+    }
+
 }
