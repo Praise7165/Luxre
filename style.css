@@ -426,6 +426,14 @@ button {
     .projects {
         grid-template-columns: 1fr 1fr;
     }
+
+    .testimonials {
+        column-gap: 1rem;
+        grid-template-areas: 
+        "one two"
+        "three four"
+        "five"
+    }
 }
 
 /* small devices, landscape tablet and large phone 767 downward */
@@ -479,6 +487,15 @@ button {
 
     .projects {
         gap: 4rem 1rem;
+    }
+
+    .testimonials {
+        grid-template-areas: 
+        "one"
+        "two"
+        "three"
+        "four"
+        "five";
     }
 }
 
