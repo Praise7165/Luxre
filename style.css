@@ -7,8 +7,9 @@
 }
 
 body {
-    font-family: 'General sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Satoshi, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #403E3F;
+    font-size: 16px;
 }
 
 img {
@@ -63,7 +64,7 @@ video {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 0 24px 0;
+    padding: 12px 0;
     border-bottom: 1px solid hsl(348, 33%, 97%, .4);
 }
 
@@ -94,7 +95,7 @@ h1 {
 }
 
 .hero-content p {
-    font: normal 300 20px/160% 'General sans';
+    font: normal 300 20px/160% Satoshi;
     color: #A39598;
     margin: 16px 0 24px 0;
 }
@@ -103,7 +104,7 @@ button {
     color: #2DBDBD;
     background-color: transparent;
     text-decoration: underline;
-    font: normal 500 20px 'General sans';
+    font: normal 500 20px Satoshi;
 }
 
 .hero-content {
@@ -113,23 +114,25 @@ button {
 
 .social-proof div {
     display: flex;
-    align-items: center;
-    gap: 16px;
+    flex-direction: column;
+    gap: 4px;
 }
+
 .social-proof strong {
     font: normal 400 64px/1.4 Satoshi; 
 }
 
 .social-proof p, .process p {
-    font: normal 300 18px/1.8 'General sans';
+    font: normal 300 18px/1.8 Satoshi;
     color: #B0A2A5;
 }
 
 .social-proof {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
     padding-top: 96px;
-    gap: 5em;
 }
 
 
@@ -264,7 +267,7 @@ button {
 
 .subheading {
     width: 20rem;
-    font: normal 400 16px/1.6 'General Sans';
+    font: normal 400 16px/1.6 Satoshi;
     align-self: flex-end;
     letter-spacing: .5px;
 }
@@ -283,7 +286,7 @@ button {
 }
 
 .step {
-    font: normal 500 16px 'General sans';
+    font: normal 500 16px Satoshi;
 }
 
 .overlay {
@@ -334,7 +337,7 @@ button {
 .footer-wrapper {
     background-color: rgba(64, 62, 63);
     color: #FAF5F6;
-    font: normal 300 16px/1.8 'General sans';
+    font: normal 300 16px/1.8 Satoshi;
 }
 
 .footer-wrapper .container > :first-child {
@@ -353,7 +356,7 @@ button {
 }
 
 .footer-wrapper  h6{
-    font: normal 400 18px 'General sans';
+    font: normal 400 18px Satoshi;
     margin-bottom: 16px;
 }
 
@@ -392,6 +395,10 @@ button {
     .container {
         margin: 0 40px;
     }
+
+    h1 {
+        font-size: 64px;
+    }
 }
 
 /* small devices, landscape tablet and large phone 767 downward */
@@ -417,6 +424,24 @@ button {
         font-size: 24px;
         color: #262424;
     }
+
+    h1 {
+        font-size: 48px;
+    }
+
+
+    .social-proof {
+        justify-content: flex-start;
+        gap: 3rem;
+    }
+
+    .section-heading {
+        font-size: 2.5rem;
+    }
+
+    .services-container > div {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 /* For extra small devices, mobile phones 480 downward */
@@ -424,4 +449,10 @@ button {
     .container {
         margin: 0 16px;
     } 
+
+
+    .services-container > div {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
 }
