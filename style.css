@@ -1,3 +1,12 @@
+@font-face {
+    font-family: Satoshi;
+    src: url("https://drive.google.com/uc?export=download&id=11Uk3qe0juu6GRAd9gQjgeBTd9kCjHwso"),
+    url("https://drive.google.com/uc?export=download&id=18R8zTMDkVYHpF5RCitU3PwI_IW2GMGOC"),
+    url("https://drive.google.com/uc?export=download&id=1R8SoyUt66EjrCBs7PnDV7_XhYZiruxGf"),
+    url("https://drive.google.com/uc?export=download&id=1KmEeixKWsBFUMw_HavCii4cHEyM_5jWp"),
+    url("https://drive.google.com/uc?export=download&id=1yVP4-MG7xHhUFO0v5qkja0G73IWtbrEQ"),
+    url("https://drive.google.com/uc?export=download&id=16R_zD56cbDhDlkLei5XQAv3eoDgDNLAu");
+}
 
 * {
     padding: 0;
