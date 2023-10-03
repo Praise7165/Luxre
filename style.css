@@ -356,11 +356,6 @@ button {
     color: inherit;
 }
 
-.process button::after {
-    content: url(/Assets/Arrow.png);
-    margin-left: 8px;
-}
-
 .process p, .footer-wrapper h1 {
     margin-bottom: 16px;
 }
