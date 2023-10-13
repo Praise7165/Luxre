@@ -16,6 +16,10 @@ img {
     max-width: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 video {
     width: 100%;
     max-width: 100vw;
@@ -80,6 +84,7 @@ ol {
     display: flex;
     gap: 24px;
     align-items: center;
+    color: #FAF5F6;
 }
 
 .navlinks li a {
@@ -89,7 +94,7 @@ ol {
     border-radius: 32px;
 }
 
-.navlinks li a:hover {
+.navlinks li a:hover, .navlinks .active{
     background-color: #2DBDBD;
     color: #FAF5F6;
 }
@@ -113,6 +118,10 @@ button {
 
 .hero-content {
     margin-bottom: 104px;
+}
+
+.h-para {
+    width: 40%;
 }
 
 
@@ -454,6 +463,10 @@ button {
     .process > :last-child {
         width: 70%;
     }
+
+    .h-para {
+        width: 60%;
+    }
 }
 
 /* small devices, landscape tablet and large phone 767 downward */
@@ -573,7 +586,9 @@ button {
         width: 90%;
     }
 
-
+    .h-para {
+        width: 70%;
+    }
 
 
 }
@@ -595,6 +610,10 @@ button {
 
     .grid-item {
         flex: 1 auto;
+    }
+
+    .h-para {
+        width: 100%;
     }
 
 }

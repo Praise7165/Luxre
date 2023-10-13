@@ -1,7 +1,10 @@
 let projects = document.querySelector(".projects");
 let testimonials = document.querySelector(".testimonials");
-let sideBar = document.querySelector("nav");
-let menuBar = document.querySelector(".menuBar")
+
+
+
+
+
 
 
 projectList.forEach((project) => {
@@ -15,7 +18,7 @@ projectList.sort((a, b) => {
 
 
 
-projectList.slice(0, 6).forEach((project) => {
+projectList.slice(0, 6).forEach(project => {
     let projectCard = document.createElement("div");
     let projectDetails = document.createElement("div");
     let heading = document.createElement("h3");
@@ -91,8 +94,9 @@ for (let i = 0; i < newProjects.length; i++) {
 };
 
 
-menuBar.addEventListener("click", () => {
-    sideBar.classList.toggle("sideBar");
-});
+
+
+
+
 
 
