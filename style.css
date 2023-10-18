@@ -23,6 +23,7 @@ img {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 video {
@@ -375,6 +376,7 @@ button {
     color: #FAF5F6;
     font: normal 300 16px/1.8 Prompt;
 }
+
 
 .footer-wrapper .container > :first-child {
     width: 70%;
