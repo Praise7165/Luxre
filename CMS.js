@@ -134,43 +134,43 @@ projectList.sort((a, b) => {
 let team = [
     {
         name: "Rebecca Teden",
-        Role: "Founder and creative director",
-        Image: "https://drive.google.com/uc?export=view&id=1EyiQ0J52h3ZKcsVAQbnyg0qhYqiW94G2",
+        role: "Founder and creative director",
+        image: "./Assets/Team/1x/President.jpg",
         Bio: "Rebecca Teden is the founder of Luxre Interior Design with over 20 years of experience in the interior design industry. Rebecca is a graduate of the Fashion Institute of Technology, she holds a degree in interior design and she is also a certified interior designer by the National Council for Interior Design Qualification (NCIDQ). Rebecca is a member of the American Society of Interior Designers (ASID), and she is a frequent speaker at industry events. Rebecca is known for her keen eye for detail, her passion for creating beautiful spaces.",
         Projects: [projectList[0], projectList[1], projectList[2]]
     },
     {
         name: "Samantha Henning",
-        Role: "Senior designer",
-        Image: "https://drive.google.com/uc?export=view&id=1ejW9fkdZhylQotnJsdrZyMNYzTyBIO9N",
+        role: "Senior designer",
+        image: "./Assets/Team/1x/Henning.jpg",
         Bio: "Samantha Henning is an accomplished senior designer at Luxre with over a decade of experience. Her remarkable talent and attention to detail have earned her recognition in prestigious publications like Architectural Digest, Elle Decor, and House Beautiful. Samantha is the recipient of the 2019 ASID Award for Best Residential Design and the 2020 NCIDQ Award for Excellence in Interior Design. With a passion for creating personalized spaces that harmonize functionality and aesthetics, Samantha continues to inspire clients and elevate the Luxre portfolio.",
         Projects: [projectList[0], projectList[1], projectList[2]]
     },
     {
         name: "Khasan Xerxes",
-        Role: "Senior designer",
-        Image: "https://drive.google.com/uc?export=view&id=1LXa_0MbySHSMU4hg6DpqVIe4TZWI7FU1",
+        role: "Senior designer",
+        image: "./Assets/Team/1x/Khosan.jpg",
         Bio: "Khosan Xerxes is a senior designer at Luxre, renowned for his exceptional creativity, attention to detail, and commitment to delivering extraordinary design experiences. With a wealth of experience in the industry, Khosan brings a unique perspective to his work, blending artistic vision with functional design solutions. His ability to connect with clients and translate their visions into stunning realities has earned him a reputation as a sought-after designer.",
         Projects: [projectList[0], projectList[1], projectList[2]]
     },
     {
         name: "Callie Machalat",
-        Role: "Junior designer",
-        Image: "https://drive.google.com/uc?export=view&id=199qG45hvd9nuO0rrXyneMCRCyBn9UPNx",
+        role: "Junior designer",
+        image: "./Assets/Team/1x/Callie.jpg",
         Bio: "Callie Machalat is a junior designer at Luxre Interior Design, where she has worked for the past year. She is passionate about creating beautiful and functional spaces that reflect the unique personality and needs of her clients. Callie is a talented designer who is always eager to learn and grow. She is also a great team player and is always willing to help out her colleagues.",
         Projects: [projectList[0], projectList[1], projectList[2]]
     },
     {
         name: "Seun Olorunfemi",
-        Role: "Interior Stylist",
-        Image: "https://drive.google.com/uc?export=view&id=1QCgA7dzSvAEFf6dmglWw0dPAqYy1FtvK",
+        role: "Interior Stylist",
+        image: "./Assets/Team/1x/Seun.jpg",
         Bio: "Seun Olorunfemi is the interior stylist at Luxre, adding the finishing touches and impeccable styling to each project. With a background in fashion and a keen eye for trends, Seun brings a unique perspective to the team. From selecting the perfect accessories to curating art collections, he ensures that each space is personalized and reflects the client's personality and lifestyle.",
         Projects: [projectList[0], projectList[1], projectList[2]]
     },
     {
         name: "Thomas McCornick",
-        Role: "Project Manager",
-        Image: "https://drive.google.com/uc?export=view&id=1Uudv-fEhbRC2bZt50RiDnzEoaRZ_Lalf",
+        role: "Project Manager",
+        image: "./Assets/Team/1x/Thomas.jpg",
         Bio: "Thomas McCornick is the project manager at Luxre, overseeing the smooth execution of every design project. With his exceptional organizational skills and attention to deadlines, Thomas ensures that each client's vision is brought to life seamlessly. He collaborates closely with both the design team and the clients, ensuring effective communication and a streamlined workflow from start to finish.",
         Projects: [projectList[0], projectList[1], projectList[2]]
     }

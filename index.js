@@ -1,11 +1,9 @@
 let latestProjects = document.querySelector(".selProjects");
-const testimonials = document.querySelector(".testimonials");
-let TestimonialClasses = ["one", "two", "three", "four", "five"];
-
+let testimonials = document.querySelector(".testimonials");
 
 
 // display latest project.
-displayProjects(projectList.slice(0, 6), latestProjects);
+displayProjects(projectList.slice(0, 6), latestProjects, createProject);
 
 
 
@@ -18,7 +16,7 @@ let newProjects = projectList.filter((project) => {
 });
 
 
-
+/*
 for (let i = 0; i < newProjects.length; i++) {
 
     let testimonialCard = document.createElement("div");
@@ -31,17 +29,24 @@ for (let i = 0; i < newProjects.length; i++) {
     testimonials.appendChild(testimonialCard);   
 
 };
+*/
 
 
 
+function createTestimonial(clientTestimonial) {
 
-
-function createTElement() {
   let testimonialCard = document.createElement("div");
-  testimonialCard.classList.add(`${TestimonialClasses[i]}`, "tCards");
+  testimonialCard.classList.add(`${testimonialClasses.shift()}`, "tCards");
+
+  let date = clientTestimonial.dateCompleted.getFullYear();
 
   testimonialCard.innerHTML = `
-    <p class="testimonial">&ldquo;${newProjects[i].testimonial}&rdquo;</p>
-    <div class="tname">${newProjects[i].name} in ${newProjects[i].location}, ${newProjects[i].dateCompleted.getFullYear()}</div>
+    <p class="testimonial">&ldquo;${clientTestimonial.testimonial}&rdquo;</p>
+    <div class="tname">${clientTestimonial.name} in ${clientTestimonial.location}, ${date}</div>
   `;
+
+  return testimonialCard;
 };
+
+
+displayProjects(newProjects, testimonials, createTestimonial);

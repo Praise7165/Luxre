@@ -242,10 +242,13 @@ button {
     margin-top: 16px;
 }
 
-.project-image {
+.project-image, .member-image {
     background-size: cover;
     height: 320px;
     background-position: 50% 50%;
+}
+.member-image {
+    background-color: #F0E9EA33;
 }
 
 .testimonials {

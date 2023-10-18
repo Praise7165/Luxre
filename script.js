@@ -1,5 +1,5 @@
 
-
+let testimonialClasses = ["one", "two", "three", "four", "five"];
 // const teams = document.querySelector(".teams");
 
 
@@ -35,53 +35,10 @@ function createProject(project) {
 
 
 
-function displayProjects(projects, element) {
+function displayProjects(projects, element, newFunction) {
     projects.forEach(project => {
-        element.appendChild(createProject(project));
+        element.appendChild(newFunction(project));
     });
 };
 
 
-
-
-
-
-
-
-/*
-function teamMember(member) {
-
-    let memberCard = document.createElement("div");
-    let memberDetails = document.createElement("div");
-    let memberName = document.createElement("h3");
-    let role = document.createElement("span");
-    let bgImage = document.createElement("div");
-
-
-    memberName.textContent = member.name;
-    role.textContent = member.Role;
-
-    bgImage.style.backgroundImage = `url("${member.Image}")`;
-    bgImage.style.height = "320px";
-
-    memberDetails.appendChild(memberName);
-    memberDetails.appendChild(role);
-
-
-    memberCard.appendChild(bgImage);
-    memberCard.appendChild(memberDetails);
-
-    memberName.classList.add("project-name");
-    role.classList.add("project-tag");
-    bgImage.classList.add("project-image");
-
-
-    teams.appendChild(memberCard);
-    
-}
-
-
-
-team.forEach(member => teamMember(member));
-
-*/
