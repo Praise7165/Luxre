@@ -1,6 +1,12 @@
 
 let testimonialClasses = ["one", "two", "three", "four", "five"];
-// const teams = document.querySelector(".teams");
+let menuBar = document.querySelector(".menuBar");
+let sideBar = document.querySelector("nav");
+
+
+menuBar.addEventListener("click", () => {
+  sideBar.classList.toggle("sideBar");
+});
 
 
 
@@ -40,5 +46,7 @@ function displayProjects(projects, element, newFunction) {
         element.appendChild(newFunction(project));
     });
 };
+
+
 
 

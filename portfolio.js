@@ -14,7 +14,7 @@ function createTeamCard(member) {
     bgImage.style.backgroundImage = `url("${member.image}")`;
     bgImage.classList.add("member-image");
 
-    teamCard.appendChild(bgImage)
+    teamCard.appendChild(bgImage);
 
 
     teamCard.innerHTML += `
