@@ -6,6 +6,11 @@
     border: none;
 }
 
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Prompt, Satoshi, Verdana, sans-serif;
     color: #403E3F;
@@ -120,6 +125,10 @@ button {
     margin-bottom: 104px;
 }
 
+.removeBM {
+    margin-bottom: 0;
+}
+
 .h-para {
     width: 40%;
 }
@@ -210,7 +219,7 @@ button {
 }
 
 .process h3, .project-name {
-    font: normal 400 32px Prompt;
+    font: normal 300 24px Prompt;
 }
 
 .project-tag {

@@ -1,96 +1,44 @@
-let projects = document.querySelector(".projects");
-let testimonials = document.querySelector(".testimonials");
+
+
+// const teams = document.querySelector(".teams");
 
 
 
+// Create a selected project to showcase the latest project
+const selProjects = projectList.slice(0, 6);
 
+function createProject(project) {
 
-
-
-projectList.forEach((project) => {
-    return project.DateCompleted = new Date(project.DateCompleted);
-});
-
-
-projectList.sort((a, b) => {
-    return b.DateCompleted - a.DateCompleted;
-});
-
-
-
-projectList.slice(0, 6).forEach(project => {
     let projectCard = document.createElement("div");
-    let projectDetails = document.createElement("div");
-    let heading = document.createElement("h3");
-    let tagWrapper = document.createElement("div");
-    let location = document.createElement("span");
-    let dateCompleted = document.createElement("span");
-    let type = document.createElement("span");
     let bgImage = document.createElement("div");
+    bgImage.style.backgroundImage = `url("${project.coverImage}")`;
 
+    bgImage.classList.add("project-image");
 
-    heading.innerText = project.Name;
-    location.innerText = project.Location;
-
-    dateCompleted.innerText = project.DateCompleted.getFullYear();
-    type.innerText = project.Type;
-    bgImage.style.backgroundImage = `url("${project.CoverImage}")`;
-    bgImage.style.height = "320px";
-
-
-    tagWrapper.appendChild(location);
-    tagWrapper.appendChild(dateCompleted);
-    tagWrapper.appendChild(type);
-
-    projects.appendChild(projectCard);
-    projectDetails.appendChild(heading);
-    projectDetails.appendChild(tagWrapper);
 
     projectCard.appendChild(bgImage);
-    projectCard.appendChild(projectDetails);
-
-    heading.classList.add("project-name");
-
-    location.classList.add("project-tag");
-    dateCompleted.classList.add("project-tag");
-    type.classList.add("project-tag");
-
-    tagWrapper.classList.add("tag-wrapper");
-    projectDetails.classList.add("project-details");
-    bgImage.classList.add("project-image");
     
-});
+    projectCard.innerHTML += `
+    <div class="project-details">
+      <h3 class="project-name">${project.name}</h3>
+      <div class="tag-wrapper">
+        <span class="project-tag">${project.location}</span>
+        <span class="project-tag">${project.dateCompleted.getFullYear()}</span>
+        <span class="project-tag">${project.type}</span>
+      </div>
+    </div>
+    `;
 
-
-
-let TestimonialClasses = ["one", "two", "three", "four", "five"];
-
-
-let newProjects = projectList.filter((project) => {
-    if (project.DateCompleted.getFullYear() >= 2022) {
-        return project;
-    }
-});
-
-for (let i = 0; i < newProjects.length; i++) {
-
-    let testimonialCard = document.createElement("div");
-    let testimonialP = document.createElement("p");
-    let projectName = document.createElement("div");
     
-    
-    testimonialP.innerText = newProjects[i].Testimonial;
-    testimonialP.innerHTML = "&ldquo;" + testimonialP.innerText  + "&rdquo;";
-    projectName.innerText = newProjects[i].Name + " in " + newProjects[i].Location + ", " + newProjects[i].DateCompleted.getFullYear();
-    
-    testimonialP.classList.add("testimonial");
-    testimonialCard.classList.add(`${TestimonialClasses[i]}`, "tCards");
-    projectName.classList.add("tname");
+    return projectCard;
+}
 
-    testimonialCard.appendChild(testimonialP);
-    testimonialCard.appendChild(projectName);
-    testimonials.appendChild(testimonialCard);   
 
+
+function displayProjects(projects, element) {
+    projects.forEach(project => {
+        element.appendChild(createProject(project));
+    });
 };
 
 
@@ -100,3 +48,40 @@ for (let i = 0; i < newProjects.length; i++) {
 
 
 
+/*
+function teamMember(member) {
+
+    let memberCard = document.createElement("div");
+    let memberDetails = document.createElement("div");
+    let memberName = document.createElement("h3");
+    let role = document.createElement("span");
+    let bgImage = document.createElement("div");
+
+
+    memberName.textContent = member.name;
+    role.textContent = member.Role;
+
+    bgImage.style.backgroundImage = `url("${member.Image}")`;
+    bgImage.style.height = "320px";
+
+    memberDetails.appendChild(memberName);
+    memberDetails.appendChild(role);
+
+
+    memberCard.appendChild(bgImage);
+    memberCard.appendChild(memberDetails);
+
+    memberName.classList.add("project-name");
+    role.classList.add("project-tag");
+    bgImage.classList.add("project-image");
+
+
+    teams.appendChild(memberCard);
+    
+}
+
+
+
+team.forEach(member => teamMember(member));
+
+*/

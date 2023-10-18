@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luxre - Interior design website</title>
     <link rel="stylesheet" href="style.css">
-    <script src="./newScript.js" defer></script>
+
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap');
@@ -21,10 +21,10 @@
             </div>
             <nav>
                 <ol class="navlinks">
-                    <li><a>Services</a></li>
+                    <li><a href="./index.html#services">Services</a></li>
                     <li><a href="./portfolio.html" class="active">Portfolio</a></li>
-                    <li><a>Process</a></li>
-                    <li><a>Team</a></li>
+                    <li><a href="./index.html#process">Process</a></li>
+                    <li><a href="./portfolio.html">Team</a></li>
                 </ol>
             </nav>
             <div class="menuBar">
@@ -38,10 +38,38 @@
 
     <section class="universal-wrapper hero-section">
         <div class="container">
-            <div class="hero-content">
+            <div class="hero-content removeBM">
                 <h1>Explore our <br>design work</h1>
                 <p class="h-para">Take a look at some of the recent interior design projects we've completed.</p>
                 <button>Schedule a consultation</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="universal-wrapper bgColor1">
+        <div class="container">
+            <header>
+                <h2 class="section-heading">Some Selected Projects</h2>
+                <button>See all</button>
+            </header>
+
+            <div class="projects allProjects spacing-content">
+                
+            </div>
+        </div>
+    </section>
+
+
+    <section class="universal-wrapper">
+        <div class="container">
+            <header>
+                <h2 class="section-heading">Meet our <br>design team</h2>
+                <p class="subheading">Not only are we proud of our work, we're proud of the team behind our work.</p>
+            </header>
+
+            <div class="projects teams spacing-content">
+                
             </div>
         </div>
     </section>
@@ -95,12 +123,17 @@
                         <li><a>Process</a></li>
                         <li><a>Services</a></li>
                         <li><a>Team</a></li>
-                        <li><a>Testimonial</a></li>
+                        <li><a href=>Testimonial</a></li>
                     </ol>
                 </div>
             </div>
         </div>
     </footer>
+
+
+    <script src="./cms.js" defer></script>
+    <script src="./script.js" defer></script>
+    <script src="./portfolio.js" defer></script>
     
 </body>
 </html>
