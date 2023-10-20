@@ -136,21 +136,21 @@ let team = [
         name: "Rebecca Teden",
         role: "Founder and creative director",
         image: "./Assets/Team/1x/President.jpg",
-        Bio: "Rebecca Teden is the founder of Luxre Interior Design with over 20 years of experience in the interior design industry. Rebecca is a graduate of the Fashion Institute of Technology, she holds a degree in interior design and she is also a certified interior designer by the National Council for Interior Design Qualification (NCIDQ). Rebecca is a member of the American Society of Interior Designers (ASID), and she is a frequent speaker at industry events. Rebecca is known for her keen eye for detail, her passion for creating beautiful spaces.",
+        Bio: "Rebecca Teden is the founder of Luxre Interior Design with over 20 years of experience in the interior design industry. Rebecca is a graduate of the Fashion Institute of Technology, she holds a degree in interior design and she is also a certified interior designer by the National Council for Interior Design Qualification (NCIDQ). Rebecca is a member of the American Society of Interior Designers (ASID).",
         Projects: [projectList[0], projectList[1], projectList[2]]
     },
     {
         name: "Samantha Henning",
         role: "Senior designer",
         image: "./Assets/Team/1x/Henning.jpg",
-        Bio: "Samantha Henning is an accomplished senior designer at Luxre with over a decade of experience. Her remarkable talent and attention to detail have earned her recognition in prestigious publications like Architectural Digest, Elle Decor, and House Beautiful. Samantha is the recipient of the 2019 ASID Award for Best Residential Design and the 2020 NCIDQ Award for Excellence in Interior Design. With a passion for creating personalized spaces that harmonize functionality and aesthetics, Samantha continues to inspire clients and elevate the Luxre portfolio.",
+        Bio: "Samantha Henning is an accomplished senior designer at Luxre with over a decade of experience. Her remarkable talent and attention to detail have earned her recognition in prestigious publications like Architectural Digest, Elle Decor, and House Beautiful. Samantha is the recipient of the 2019 ASID Award for Best Residential Design and the 2020 NCIDQ Award for Excellence in Interior Design.",
         Projects: [projectList[0], projectList[1], projectList[2]]
     },
     {
         name: "Khasan Xerxes",
         role: "Senior designer",
         image: "./Assets/Team/1x/Khosan.jpg",
-        Bio: "Khosan Xerxes is a senior designer at Luxre, renowned for his exceptional creativity, attention to detail, and commitment to delivering extraordinary design experiences. With a wealth of experience in the industry, Khosan brings a unique perspective to his work, blending artistic vision with functional design solutions. His ability to connect with clients and translate their visions into stunning realities has earned him a reputation as a sought-after designer.",
+        Bio: "Khosan is a senior designer at Luxre, renowned for his exceptional creativity, attention to detail, and commitment to delivering extraordinary design experiences. He brings a unique perspective to his work, blending artistic vision with functional design solutions. His ability to connect with clients and translate their visions into stunning realities has earned him a reputation as a sought-after designer.",
         Projects: [projectList[0], projectList[1], projectList[2]]
     },
     {

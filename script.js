@@ -4,9 +4,12 @@ let menuBar = document.querySelector(".menuBar");
 let sideBar = document.querySelector("nav");
 
 
+
 menuBar.addEventListener("click", () => {
   sideBar.classList.toggle("sideBar");
 });
+
+
 
 
 
@@ -20,6 +23,7 @@ function createProject(project) {
     bgImage.style.backgroundImage = `url("${project.coverImage}")`;
 
     bgImage.classList.add("project-image");
+    
 
 
     projectCard.appendChild(bgImage);
@@ -35,6 +39,8 @@ function createProject(project) {
     </div>
     `;
 
+    projectCard.classList.add("project-card");
+
     
     return projectCard;
 }
@@ -46,6 +52,8 @@ function displayProjects(projects, element, newFunction) {
         element.appendChild(newFunction(project));
     });
 };
+
+
 
 
 

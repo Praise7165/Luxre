@@ -130,6 +130,17 @@ button {
     margin-bottom: 0;
 }
 
+.member-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+}
+
+.member-hero .member-image {
+    height: 80%;
+}
+
+
 .h-para {
     width: 40%;
 }
@@ -481,6 +492,14 @@ button {
     .h-para {
         width: 60%;
     }
+
+    .member-hero {
+        gap: 2rem;
+    }
+    
+    .member-hero .member-image {
+        height: 80%;
+    }
 }
 
 /* small devices, landscape tablet and large phone 767 downward */
@@ -604,8 +623,21 @@ button {
         width: 70%;
     }
 
+    .member-hero {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .member-hero .member-image {
+        height: 240px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
 
 }
+
+
 
 /* For extra small devices, mobile phones 480 downward */
 @media only screen and (max-width: 480px) {

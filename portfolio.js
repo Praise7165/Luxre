@@ -2,6 +2,8 @@ let projectSection = document.querySelector(".allProjects");
 let teamSection = document.querySelector(".teams");
 
 
+
+
 displayProjects(projectList, projectSection, createProject);
 
 
@@ -24,9 +26,32 @@ function createTeamCard(member) {
      </div>
     `;
 
+    teamCard.classList.add("member-card");
+
 
     return teamCard;
 };
 
 // displayProjects(team, teamSection);
 displayProjects(team, teamSection, createTeamCard);
+
+
+
+
+let teamCards = document.querySelectorAll(".member-card");
+
+
+for (let card of teamCards) {
+    card.addEventListener("click", () => {
+
+        
+        let targetName = card.querySelector(".project-name").textContent;
+
+        let storedClass = localStorage.setItem("class", targetName);
+
+
+        document.location.href = "teammember.html";
+
+    })
+}
+
